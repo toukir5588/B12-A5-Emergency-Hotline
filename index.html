@@ -28,6 +28,11 @@
 
       .noto-sans-bengali {
         font-family: "Noto Sans Bengali", sans-serif;
+
+      }
+
+      button{
+        cursor: pointer;
       }
     </style>
     <!-- !css link -->
@@ -47,13 +52,14 @@
         <div
           class="flex justify-center items-center gap-3 w-28 bg-[#41FF6B1A] p-2 rounded-full"
         >
-          <span>0</span>
+          <span id="live_heart">0</span>
           <img class="w-7 h-7" src="./assets/heart.png" alt="" />
         </div>
-        <div
+
+        <div 
           class="flex justify-center items-center gap-3 w-28 bg-[#41FF6B1A] p-2 rounded-full"
         >
-          <span>100</span>
+          <span id="live_coin">100</span>
           <img class="w-7 h-7" src="./assets/coin.png" alt="" />
         </div>
 
@@ -96,16 +102,16 @@
                 >
                   <img class="w-8" src="./assets/emergency.png" alt="" />
                 </div>
-                <div><i class="fa-regular fa-heart text-[#5C5C5C]"></i></div>
+                <div><i id="heart_click" class="fa-regular fa-heart text-[#5C5C5C]"></i></div>
               </div>
 
               <div class="mt-4">
-                <h1 class="text-2xl font-bold">জাতীয় জরুরি সেবা</h1>
+                <h1 id="service_name" class="text-2xl font-bold">জাতীয় জরুরি সেবা</h1>
                 <p class="text-[#5C5C5C]">National Emergency</p>
               </div>
 
               <div class="my-6">
-                <h1 class="text-3xl font-bold mb-2">999</h1>
+                <h1 id="service_number" class="text-3xl font-bold mb-2">999</h1>
                 <p
                   class="text-[#5C5C5C] bg-[#D4D6D5] rounded-full px-3 py-1 inline-block"
                 >
@@ -119,14 +125,14 @@
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
-                <button class="bg-[#00A63E] py-2 px-10 rounded-lg text-white">
+                <button id="call_btn" class="bg-[#00A63E] py-2 px-10 rounded-lg text-white">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
             </div>
 
             <!-- *card 2 -->
-            <div id="card_1" class="bg-white rounded-xl p-7 md:p-5 shadow-md">
+            <div id="card_2" class="bg-white rounded-xl p-7 md:p-5 shadow-md">
               <div class="flex justify-between">
                 <div
                   class="w-14 h-14 bg-[#DFEFFF] rounded-lg flex justify-center items-center"
@@ -443,5 +449,8 @@
 
       <!-- ? end card section -->
     </main>
+
+    <script src="./js/script.js"></script>
   </body>
+
 </html>
